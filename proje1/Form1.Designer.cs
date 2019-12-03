@@ -28,100 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.lblKullaniciAdi = new System.Windows.Forms.Label();
+            this.lblSifre = new System.Windows.Forms.Label();
+            this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
+            this.btnGiris = new System.Windows.Forms.Button();
+            this.lblFirmaAdi = new System.Windows.Forms.Label();
+            this.btnCikis = new System.Windows.Forms.Button();
+            this.cmbFirma = new System.Windows.Forms.ComboBox();
+            this.firmaBilgileriBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.firmaBilgileriBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblKullaniciAdi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(121, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı:";
+            this.lblKullaniciAdi.AutoSize = true;
+            this.lblKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(25, 55);
+            this.lblKullaniciAdi.Name = "lblKullaniciAdi";
+            this.lblKullaniciAdi.Size = new System.Drawing.Size(97, 16);
+            this.lblKullaniciAdi.TabIndex = 0;
+            this.lblKullaniciAdi.Text = "Kullanıcı Adı:";
             // 
-            // label2
+            // lblSifre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Şifre:";
+            this.lblSifre.AutoSize = true;
+            this.lblSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSifre.Location = new System.Drawing.Point(77, 85);
+            this.lblSifre.Name = "lblSifre";
+            this.lblSifre.Size = new System.Drawing.Size(44, 16);
+            this.lblSifre.TabIndex = 1;
+            this.lblSifre.Text = "Şifre:";
             // 
-            // textBox1
+            // txtKullaniciAdi
             // 
-            this.textBox1.Location = new System.Drawing.Point(227, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 24);
-            this.textBox1.TabIndex = 2;
+            this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(131, 55);
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(130, 23);
+            this.txtKullaniciAdi.TabIndex = 2;
             // 
-            // textBox2
+            // txtSifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(227, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 24);
-            this.textBox2.TabIndex = 3;
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Location = new System.Drawing.Point(131, 85);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(130, 23);
+            this.txtSifre.TabIndex = 3;
             // 
-            // button1
+            // btnGiris
             // 
-            this.button1.Location = new System.Drawing.Point(236, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGiris.Location = new System.Drawing.Point(38, 128);
+            this.btnGiris.Name = "btnGiris";
+            this.btnGiris.Size = new System.Drawing.Size(100, 31);
+            this.btnGiris.TabIndex = 4;
+            this.btnGiris.Text = "Giriş";
+            this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
-            // textBox3
+            // lblFirmaAdi
             // 
-            this.textBox3.Location = new System.Drawing.Point(227, 29);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 24);
-            this.textBox3.TabIndex = 7;
+            this.lblFirmaAdi.AutoSize = true;
+            this.lblFirmaAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFirmaAdi.Location = new System.Drawing.Point(45, 25);
+            this.lblFirmaAdi.Name = "lblFirmaAdi";
+            this.lblFirmaAdi.Size = new System.Drawing.Size(78, 16);
+            this.lblFirmaAdi.TabIndex = 6;
+            this.lblFirmaAdi.Text = "Firma Adı:";
             // 
-            // label3
+            // btnCikis
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(141, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Firma Adı:";
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.Location = new System.Drawing.Point(150, 128);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(100, 31);
+            this.btnCikis.TabIndex = 9;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
-            // button9
+            // cmbFirma
             // 
-            this.button9.Location = new System.Drawing.Point(236, 157);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(91, 27);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Çıkış";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.cmbFirma.DataSource = this.firmaBilgileriBindingSource;
+            this.cmbFirma.DisplayMember = "FirmaAdi";
+            this.cmbFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbFirma.FormattingEnabled = true;
+            this.cmbFirma.Location = new System.Drawing.Point(131, 21);
+            this.cmbFirma.Name = "cmbFirma";
+            this.cmbFirma.Size = new System.Drawing.Size(130, 24);
+            this.cmbFirma.TabIndex = 10;
+            this.cmbFirma.ValueMember = "Id";
+            // 
+            // firmaBilgileriBindingSource
+            // 
+            this.firmaBilgileriBindingSource.DataSource = typeof(DataAccessLayer.Concreate.FirmaBilgileri);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 196);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(288, 205);
+            this.Controls.Add(this.cmbFirma);
+            this.Controls.Add(this.btnCikis);
+            this.Controls.Add(this.lblFirmaAdi);
+            this.Controls.Add(this.btnGiris);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.txtKullaniciAdi);
+            this.Controls.Add(this.lblSifre);
+            this.Controls.Add(this.lblKullaniciAdi);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Giriş Ekranı";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.firmaBilgileriBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,14 +152,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label lblKullaniciAdi;
+        private System.Windows.Forms.Label lblSifre;
+        private System.Windows.Forms.TextBox txtKullaniciAdi;
+        private System.Windows.Forms.TextBox txtSifre;
+        private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label lblFirmaAdi;
+        private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.ComboBox cmbFirma;
+        private System.Windows.Forms.BindingSource firmaBilgileriBindingSource;
     }
 }
 
