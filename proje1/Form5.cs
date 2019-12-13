@@ -10,18 +10,56 @@ using System.Windows.Forms;
 
 namespace proje1
 {
-    public partial class Form5 : Form
+    public partial class frmSube : Form
     {
-        public Form5()
+        public frmSube()
         {
             InitializeComponent();
         }
-
-        private void button9_Click(object sender, EventArgs e)
+        public void temizle()
         {
-            Form2 a = new Form2();
-            a.Show();
-            this.Hide();
+            txtAdi.Text = "";
+            txtSubeMarketKodu.Text = "";
+            cmbBolgesi.Text = "";
+        }
+        public void gorunur()
+        {
+            txtAdi.Enabled = true;
+            txtSubeMarketKodu.Enabled = true;
+            cmbBolgesi.Enabled = true;
+            
+        }
+        public void gorunmez()
+        {
+            txtAdi.Enabled = false;
+            txtSubeMarketKodu.Enabled = false;
+            cmbBolgesi.Enabled = false;
+            
+        }
+        private void frmSube_Load(object sender, EventArgs e)
+        {
+            gorunmez();
+        }
+
+        private void eKLEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gorunmez();
+            gorunur();
+            btnEkle.Enabled = true;
+            temizle();
+        }
+
+        private void sİLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gorunmez();
+            txtSubeMarketKodu.Enabled = true;
+            btnListele.Enabled = true;
+            temizle();
+        }
+
+        private void gÜNCELLEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gorunmez();
         }
     }
 }

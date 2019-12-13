@@ -4,3 +4,8 @@ C:\Users\Lenovo\source\repos\Anket\DataAccessLayer\obj\Debug\DataAccessLayer.csp
 C:\Users\Lenovo\source\repos\Anket\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\source\repos\Anket\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Lenovo\source\repos\Anket\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\AçılımSoft\source\repos\proje1\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\AçılımSoft\source\repos\proje1\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\AçılımSoft\source\repos\proje1\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\AçılımSoft\source\repos\proje1\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\AçılımSoft\source\repos\proje1\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

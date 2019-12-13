@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proje1
 {
-    public partial class Form6 : Form
+    public partial class frmMusteriAnket : Form
     {
-        public Form6()
+        public frmMusteriAnket()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace proje1
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form2 a = new Form2();
+            frmMenu a = new frmMenu();
             a.Show();
             this.Hide();
         }

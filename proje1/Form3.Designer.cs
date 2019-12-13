@@ -1,6 +1,6 @@
 ﻿namespace proje1
 {
-    partial class Form3
+    partial class frmYonetici
     {
         /// <summary>
         /// Required designer variable.
@@ -29,276 +29,501 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.btnSil = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnListele = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button9 = new System.Windows.Forms.Button();
+            this.lblAdi = new System.Windows.Forms.Label();
+            this.lblSoyadi = new System.Windows.Forms.Label();
+            this.lblPersonelKodu = new System.Windows.Forms.Label();
+            this.lblSifresi = new System.Windows.Forms.Label();
+            this.lblBolgesi = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
+            this.cmbBolgesi = new System.Windows.Forms.ComboBox();
+            this.txtTC = new System.Windows.Forms.TextBox();
+            this.txtAdi = new System.Windows.Forms.TextBox();
+            this.txtSoyadi = new System.Windows.Forms.TextBox();
+            this.txtPersonelKodu = new System.Windows.Forms.TextBox();
+            this.txtSifresi = new System.Windows.Forms.TextBox();
+            this.lblCinsiyet = new System.Windows.Forms.Label();
+            this.rndTc = new System.Windows.Forms.RadioButton();
+            this.rndAd = new System.Windows.Forms.RadioButton();
+            this.rndSoyad = new System.Windows.Forms.RadioButton();
+            this.rndPersonelKodu = new System.Windows.Forms.RadioButton();
+            this.rndSifresi = new System.Windows.Forms.RadioButton();
+            this.rndBolgesi = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rndCinsiyet = new System.Windows.Forms.RadioButton();
+            this.checkErkek = new System.Windows.Forms.CheckBox();
+            this.checkKadin = new System.Windows.Forms.CheckBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.eKLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sİLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gÜNCELLEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lİSTELEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gERİToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hAKKIMIZDAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gERİToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.çIKIŞToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aRKAPLANToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kIRMIZIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sARIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mAVİToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bEYAZToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 232);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 404);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1032, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(830, 235);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // button1
+            // btnEkle
             // 
-            this.button1.Location = new System.Drawing.Point(12, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEkle.Location = new System.Drawing.Point(561, 139);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(97, 40);
+            this.btnEkle.TabIndex = 1;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
-            // button2
+            // btnSil
             // 
-            this.button2.Location = new System.Drawing.Point(12, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 37);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "SİL";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSil.Location = new System.Drawing.Point(561, 191);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(97, 37);
+            this.btnSil.TabIndex = 2;
+            this.btnSil.Text = "SİL";
+            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
-            // button3
+            // btnGuncelle
             // 
-            this.button3.Location = new System.Drawing.Point(12, 107);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 37);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "GÜNCELLE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Location = new System.Drawing.Point(679, 139);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(106, 37);
+            this.btnGuncelle.TabIndex = 3;
+            this.btnGuncelle.Text = "GÜNCELLE";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
-            // button4
+            // btnListele
             // 
-            this.button4.Location = new System.Drawing.Point(12, 150);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(97, 38);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "LİSTELE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnListele.Location = new System.Drawing.Point(679, 190);
+            this.btnListele.Name = "btnListele";
+            this.btnListele.Size = new System.Drawing.Size(97, 38);
+            this.btnListele.TabIndex = 4;
+            this.btnListele.Text = "LİSTELE";
+            this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(417, 9);
+            this.label1.Location = new System.Drawing.Point(316, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "YÖNETİCİ EKRAN";
             // 
-            // label2
+            // lblAdi
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(744, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 18);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "ADI:";
-            this.label2.Visible = false;
+            this.lblAdi.AutoSize = true;
+            this.lblAdi.Location = new System.Drawing.Point(229, 158);
+            this.lblAdi.Name = "lblAdi";
+            this.lblAdi.Size = new System.Drawing.Size(39, 18);
+            this.lblAdi.TabIndex = 6;
+            this.lblAdi.Text = "ADI:";
             // 
-            // label3
+            // lblSoyadi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(711, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 18);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "SOYADI:";
-            this.label3.Visible = false;
+            this.lblSoyadi.AutoSize = true;
+            this.lblSoyadi.Location = new System.Drawing.Point(196, 194);
+            this.lblSoyadi.Name = "lblSoyadi";
+            this.lblSoyadi.Size = new System.Drawing.Size(73, 18);
+            this.lblSoyadi.TabIndex = 7;
+            this.lblSoyadi.Text = "SOYADI:";
             // 
-            // label4
+            // lblPersonelKodu
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(627, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 18);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "PERSONEL KODU:";
-            this.label4.Visible = false;
+            this.lblPersonelKodu.AutoSize = true;
+            this.lblPersonelKodu.Location = new System.Drawing.Point(112, 225);
+            this.lblPersonelKodu.Name = "lblPersonelKodu";
+            this.lblPersonelKodu.Size = new System.Drawing.Size(156, 18);
+            this.lblPersonelKodu.TabIndex = 8;
+            this.lblPersonelKodu.Text = "PERSONEL KODU:";
             // 
-            // label5
+            // lblSifresi
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(707, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 18);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "ŞİFRESİ:";
-            this.label5.Visible = false;
+            this.lblSifresi.AutoSize = true;
+            this.lblSifresi.Location = new System.Drawing.Point(192, 255);
+            this.lblSifresi.Name = "lblSifresi";
+            this.lblSifresi.Size = new System.Drawing.Size(76, 18);
+            this.lblSifresi.TabIndex = 9;
+            this.lblSifresi.Text = "ŞİFRESİ:";
             // 
-            // label6
+            // lblBolgesi
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(699, 163);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 18);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "BÖLGESİ:";
-            this.label6.Visible = false;
+            this.lblBolgesi.AutoSize = true;
+            this.lblBolgesi.Location = new System.Drawing.Point(184, 285);
+            this.lblBolgesi.Name = "lblBolgesi";
+            this.lblBolgesi.Size = new System.Drawing.Size(85, 18);
+            this.lblBolgesi.TabIndex = 10;
+            this.lblBolgesi.Text = "BÖLGESİ:";
             // 
-            // label7
+            // lblTC
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(744, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 18);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "T.C:";
-            this.label7.Visible = false;
+            this.lblTC.AutoSize = true;
+            this.lblTC.Location = new System.Drawing.Point(229, 122);
+            this.lblTC.Name = "lblTC";
+            this.lblTC.Size = new System.Drawing.Size(40, 18);
+            this.lblTC.TabIndex = 11;
+            this.lblTC.Text = "T.C:";
             // 
-            // comboBox1
+            // cmbBolgesi
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbBolgesi.FormattingEnabled = true;
+            this.cmbBolgesi.Items.AddRange(new object[] {
             "İSTANBUL(AVRUPA)",
             "İSTANBUL(ANADOLU)",
             "ANKARA",
             "İZMİR",
             "ADANA"});
-            this.comboBox1.Location = new System.Drawing.Point(790, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(186, 26);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.Visible = false;
+            this.cmbBolgesi.Location = new System.Drawing.Point(275, 282);
+            this.cmbBolgesi.Name = "cmbBolgesi";
+            this.cmbBolgesi.Size = new System.Drawing.Size(186, 26);
+            this.cmbBolgesi.TabIndex = 12;
             // 
-            // textBox1
+            // txtTC
             // 
-            this.textBox1.Location = new System.Drawing.Point(790, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 24);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Visible = false;
+            this.txtTC.Location = new System.Drawing.Point(275, 119);
+            this.txtTC.MaxLength = 11;
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(186, 24);
+            this.txtTC.TabIndex = 13;
             // 
-            // textBox2
+            // txtAdi
             // 
-            this.textBox2.Location = new System.Drawing.Point(790, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 24);
-            this.textBox2.TabIndex = 14;
-            this.textBox2.Visible = false;
+            this.txtAdi.Location = new System.Drawing.Point(275, 155);
+            this.txtAdi.Name = "txtAdi";
+            this.txtAdi.Size = new System.Drawing.Size(186, 24);
+            this.txtAdi.TabIndex = 14;
             // 
-            // textBox3
+            // txtSoyadi
             // 
-            this.textBox3.Location = new System.Drawing.Point(790, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 24);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.Visible = false;
+            this.txtSoyadi.Location = new System.Drawing.Point(275, 191);
+            this.txtSoyadi.Name = "txtSoyadi";
+            this.txtSoyadi.Size = new System.Drawing.Size(186, 24);
+            this.txtSoyadi.TabIndex = 15;
             // 
-            // textBox4
+            // txtPersonelKodu
             // 
-            this.textBox4.Location = new System.Drawing.Point(790, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(186, 24);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.Visible = false;
+            this.txtPersonelKodu.Location = new System.Drawing.Point(275, 222);
+            this.txtPersonelKodu.Name = "txtPersonelKodu";
+            this.txtPersonelKodu.Size = new System.Drawing.Size(186, 24);
+            this.txtPersonelKodu.TabIndex = 16;
             // 
-            // textBox5
+            // txtSifresi
             // 
-            this.textBox5.Location = new System.Drawing.Point(790, 130);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(186, 24);
-            this.textBox5.TabIndex = 17;
-            this.textBox5.Visible = false;
+            this.txtSifresi.Location = new System.Drawing.Point(275, 252);
+            this.txtSifresi.Name = "txtSifresi";
+            this.txtSifresi.PasswordChar = '*';
+            this.txtSifresi.Size = new System.Drawing.Size(186, 24);
+            this.txtSifresi.TabIndex = 17;
             // 
-            // label8
+            // lblCinsiyet
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(696, 199);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 18);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "CİNSİYET:";
-            this.label8.Visible = false;
+            this.lblCinsiyet.AutoSize = true;
+            this.lblCinsiyet.Location = new System.Drawing.Point(181, 321);
+            this.lblCinsiyet.Name = "lblCinsiyet";
+            this.lblCinsiyet.Size = new System.Drawing.Size(87, 18);
+            this.lblCinsiyet.TabIndex = 41;
+            this.lblCinsiyet.Text = "CİNSİYET:";
             // 
-            // radioButton2
+            // rndTc
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(890, 197);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 22);
-            this.radioButton2.TabIndex = 40;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "KADIN";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Visible = false;
+            this.rndTc.AutoSize = true;
+            this.rndTc.Location = new System.Drawing.Point(6, 42);
+            this.rndTc.Name = "rndTc";
+            this.rndTc.Size = new System.Drawing.Size(14, 13);
+            this.rndTc.TabIndex = 79;
+            this.rndTc.TabStop = true;
+            this.rndTc.UseVisualStyleBackColor = true;
+            this.rndTc.CheckedChanged += new System.EventHandler(this.rndTc_CheckedChanged);
             // 
-            // radioButton1
+            // rndAd
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(802, 197);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(82, 22);
-            this.radioButton1.TabIndex = 39;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ERKEK";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Visible = false;
+            this.rndAd.AutoSize = true;
+            this.rndAd.Location = new System.Drawing.Point(6, 78);
+            this.rndAd.Name = "rndAd";
+            this.rndAd.Size = new System.Drawing.Size(14, 13);
+            this.rndAd.TabIndex = 80;
+            this.rndAd.TabStop = true;
+            this.rndAd.UseVisualStyleBackColor = true;
+            this.rndAd.CheckedChanged += new System.EventHandler(this.rndAd_CheckedChanged);
             // 
-            // button9
+            // rndSoyad
             // 
-            this.button9.Location = new System.Drawing.Point(12, 194);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(126, 27);
-            this.button9.TabIndex = 78;
-            this.button9.Text = "Geri";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.rndSoyad.AutoSize = true;
+            this.rndSoyad.Location = new System.Drawing.Point(6, 114);
+            this.rndSoyad.Name = "rndSoyad";
+            this.rndSoyad.Size = new System.Drawing.Size(14, 13);
+            this.rndSoyad.TabIndex = 81;
+            this.rndSoyad.TabStop = true;
+            this.rndSoyad.UseVisualStyleBackColor = true;
+            this.rndSoyad.CheckedChanged += new System.EventHandler(this.rndSoyad_CheckedChanged);
             // 
-            // Form3
+            // rndPersonelKodu
+            // 
+            this.rndPersonelKodu.AutoSize = true;
+            this.rndPersonelKodu.Location = new System.Drawing.Point(6, 145);
+            this.rndPersonelKodu.Name = "rndPersonelKodu";
+            this.rndPersonelKodu.Size = new System.Drawing.Size(14, 13);
+            this.rndPersonelKodu.TabIndex = 82;
+            this.rndPersonelKodu.TabStop = true;
+            this.rndPersonelKodu.UseVisualStyleBackColor = true;
+            this.rndPersonelKodu.CheckedChanged += new System.EventHandler(this.rndPersonelKodu_CheckedChanged);
+            // 
+            // rndSifresi
+            // 
+            this.rndSifresi.AutoSize = true;
+            this.rndSifresi.Location = new System.Drawing.Point(6, 175);
+            this.rndSifresi.Name = "rndSifresi";
+            this.rndSifresi.Size = new System.Drawing.Size(14, 13);
+            this.rndSifresi.TabIndex = 83;
+            this.rndSifresi.TabStop = true;
+            this.rndSifresi.UseVisualStyleBackColor = true;
+            this.rndSifresi.CheckedChanged += new System.EventHandler(this.rndSifresi_CheckedChanged);
+            // 
+            // rndBolgesi
+            // 
+            this.rndBolgesi.AutoSize = true;
+            this.rndBolgesi.Location = new System.Drawing.Point(6, 205);
+            this.rndBolgesi.Name = "rndBolgesi";
+            this.rndBolgesi.Size = new System.Drawing.Size(14, 13);
+            this.rndBolgesi.TabIndex = 84;
+            this.rndBolgesi.TabStop = true;
+            this.rndBolgesi.UseVisualStyleBackColor = true;
+            this.rndBolgesi.CheckedChanged += new System.EventHandler(this.rndBolgesi_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rndCinsiyet);
+            this.groupBox1.Controls.Add(this.rndTc);
+            this.groupBox1.Controls.Add(this.rndBolgesi);
+            this.groupBox1.Controls.Add(this.rndAd);
+            this.groupBox1.Controls.Add(this.rndSifresi);
+            this.groupBox1.Controls.Add(this.rndSoyad);
+            this.groupBox1.Controls.Add(this.rndPersonelKodu);
+            this.groupBox1.Location = new System.Drawing.Point(467, 83);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(50, 267);
+            this.groupBox1.TabIndex = 85;
+            this.groupBox1.TabStop = false;
+            // 
+            // rndCinsiyet
+            // 
+            this.rndCinsiyet.AutoSize = true;
+            this.rndCinsiyet.Location = new System.Drawing.Point(6, 238);
+            this.rndCinsiyet.Name = "rndCinsiyet";
+            this.rndCinsiyet.Size = new System.Drawing.Size(14, 13);
+            this.rndCinsiyet.TabIndex = 85;
+            this.rndCinsiyet.TabStop = true;
+            this.rndCinsiyet.UseVisualStyleBackColor = true;
+            this.rndCinsiyet.CheckedChanged += new System.EventHandler(this.rndCinsiyet_CheckedChanged);
+            // 
+            // checkErkek
+            // 
+            this.checkErkek.AutoSize = true;
+            this.checkErkek.Location = new System.Drawing.Point(275, 320);
+            this.checkErkek.Name = "checkErkek";
+            this.checkErkek.Size = new System.Drawing.Size(83, 22);
+            this.checkErkek.TabIndex = 90;
+            this.checkErkek.Text = "ERKEK";
+            this.checkErkek.UseVisualStyleBackColor = true;
+            this.checkErkek.CheckedChanged += new System.EventHandler(this.checkErkek_CheckedChanged);
+            // 
+            // checkKadin
+            // 
+            this.checkKadin.AutoSize = true;
+            this.checkKadin.Location = new System.Drawing.Point(364, 321);
+            this.checkKadin.Name = "checkKadin";
+            this.checkKadin.Size = new System.Drawing.Size(76, 22);
+            this.checkKadin.TabIndex = 91;
+            this.checkKadin.Text = "KADIN";
+            this.checkKadin.UseVisualStyleBackColor = true;
+            this.checkKadin.CheckedChanged += new System.EventHandler(this.checkKadın_CheckedChanged);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eKLEToolStripMenuItem,
+            this.sİLToolStripMenuItem,
+            this.gÜNCELLEToolStripMenuItem,
+            this.lİSTELEToolStripMenuItem,
+            this.gERİToolStripMenuItem,
+            this.aRKAPLANToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(830, 24);
+            this.menuStrip1.TabIndex = 92;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // eKLEToolStripMenuItem
+            // 
+            this.eKLEToolStripMenuItem.Name = "eKLEToolStripMenuItem";
+            this.eKLEToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.eKLEToolStripMenuItem.Text = "EKLE";
+            this.eKLEToolStripMenuItem.Click += new System.EventHandler(this.eKLEToolStripMenuItem_Click);
+            // 
+            // sİLToolStripMenuItem
+            // 
+            this.sİLToolStripMenuItem.Name = "sİLToolStripMenuItem";
+            this.sİLToolStripMenuItem.Size = new System.Drawing.Size(34, 20);
+            this.sİLToolStripMenuItem.Text = "SİL";
+            this.sİLToolStripMenuItem.Click += new System.EventHandler(this.sİLToolStripMenuItem_Click);
+            // 
+            // gÜNCELLEToolStripMenuItem
+            // 
+            this.gÜNCELLEToolStripMenuItem.Name = "gÜNCELLEToolStripMenuItem";
+            this.gÜNCELLEToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.gÜNCELLEToolStripMenuItem.Text = "GÜNCELLE";
+            this.gÜNCELLEToolStripMenuItem.Click += new System.EventHandler(this.gÜNCELLEToolStripMenuItem_Click);
+            // 
+            // lİSTELEToolStripMenuItem
+            // 
+            this.lİSTELEToolStripMenuItem.Name = "lİSTELEToolStripMenuItem";
+            this.lİSTELEToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.lİSTELEToolStripMenuItem.Text = "LİSTELE";
+            this.lİSTELEToolStripMenuItem.Click += new System.EventHandler(this.lİSTELEToolStripMenuItem_Click);
+            // 
+            // gERİToolStripMenuItem
+            // 
+            this.gERİToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hAKKIMIZDAToolStripMenuItem1,
+            this.gERİToolStripMenuItem1,
+            this.çIKIŞToolStripMenuItem});
+            this.gERİToolStripMenuItem.Name = "gERİToolStripMenuItem";
+            this.gERİToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.gERİToolStripMenuItem.Text = "HIZLI ERİŞİM";
+            // 
+            // hAKKIMIZDAToolStripMenuItem1
+            // 
+            this.hAKKIMIZDAToolStripMenuItem1.Name = "hAKKIMIZDAToolStripMenuItem1";
+            this.hAKKIMIZDAToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.hAKKIMIZDAToolStripMenuItem1.Text = "HAKKIMIZDA";
+            this.hAKKIMIZDAToolStripMenuItem1.Click += new System.EventHandler(this.hAKKIMIZDAToolStripMenuItem1_Click);
+            // 
+            // gERİToolStripMenuItem1
+            // 
+            this.gERİToolStripMenuItem1.Name = "gERİToolStripMenuItem1";
+            this.gERİToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.gERİToolStripMenuItem1.Text = "GERİ";
+            this.gERİToolStripMenuItem1.Click += new System.EventHandler(this.gERİToolStripMenuItem1_Click);
+            // 
+            // çIKIŞToolStripMenuItem
+            // 
+            this.çIKIŞToolStripMenuItem.Name = "çIKIŞToolStripMenuItem";
+            this.çIKIŞToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.çIKIŞToolStripMenuItem.Text = "ÇIKIŞ";
+            this.çIKIŞToolStripMenuItem.Click += new System.EventHandler(this.çIKIŞToolStripMenuItem_Click);
+            // 
+            // aRKAPLANToolStripMenuItem
+            // 
+            this.aRKAPLANToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kIRMIZIToolStripMenuItem,
+            this.sARIToolStripMenuItem,
+            this.mAVİToolStripMenuItem,
+            this.mORToolStripMenuItem,
+            this.bEYAZToolStripMenuItem});
+            this.aRKAPLANToolStripMenuItem.Name = "aRKAPLANToolStripMenuItem";
+            this.aRKAPLANToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.aRKAPLANToolStripMenuItem.Text = "ARKA PLAN";
+            // 
+            // kIRMIZIToolStripMenuItem
+            // 
+            this.kIRMIZIToolStripMenuItem.Name = "kIRMIZIToolStripMenuItem";
+            this.kIRMIZIToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.kIRMIZIToolStripMenuItem.Text = "KIRMIZI";
+            this.kIRMIZIToolStripMenuItem.Click += new System.EventHandler(this.kIRMIZIToolStripMenuItem_Click);
+            // 
+            // sARIToolStripMenuItem
+            // 
+            this.sARIToolStripMenuItem.Name = "sARIToolStripMenuItem";
+            this.sARIToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.sARIToolStripMenuItem.Text = "SARI";
+            this.sARIToolStripMenuItem.Click += new System.EventHandler(this.sARIToolStripMenuItem_Click);
+            // 
+            // mAVİToolStripMenuItem
+            // 
+            this.mAVİToolStripMenuItem.Name = "mAVİToolStripMenuItem";
+            this.mAVİToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.mAVİToolStripMenuItem.Text = "MAVİ";
+            this.mAVİToolStripMenuItem.Click += new System.EventHandler(this.mAVİToolStripMenuItem_Click);
+            // 
+            // mORToolStripMenuItem
+            // 
+            this.mORToolStripMenuItem.Name = "mORToolStripMenuItem";
+            this.mORToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.mORToolStripMenuItem.Text = "TURUNCU";
+            this.mORToolStripMenuItem.Click += new System.EventHandler(this.mORToolStripMenuItem_Click);
+            // 
+            // bEYAZToolStripMenuItem
+            // 
+            this.bEYAZToolStripMenuItem.Name = "bEYAZToolStripMenuItem";
+            this.bEYAZToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.bEYAZToolStripMenuItem.Text = "BEYAZ";
+            this.bEYAZToolStripMenuItem.Click += new System.EventHandler(this.bEYAZToolStripMenuItem_Click);
+            // 
+            // frmYonetici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 465);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(830, 639);
+            this.Controls.Add(this.checkKadin);
+            this.Controls.Add(this.checkErkek);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lblCinsiyet);
+            this.Controls.Add(this.txtSifresi);
+            this.Controls.Add(this.txtPersonelKodu);
+            this.Controls.Add(this.txtSoyadi);
+            this.Controls.Add(this.txtAdi);
+            this.Controls.Add(this.txtTC);
+            this.Controls.Add(this.cmbBolgesi);
+            this.Controls.Add(this.lblTC);
+            this.Controls.Add(this.lblBolgesi);
+            this.Controls.Add(this.lblSifresi);
+            this.Controls.Add(this.lblPersonelKodu);
+            this.Controls.Add(this.lblSoyadi);
+            this.Controls.Add(this.lblAdi);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnListele);
+            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.btnSil);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Form3";
+            this.Name = "frmYonetici";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "YÖNETİCİ";
+            this.Load += new System.EventHandler(this.frmYonetici_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,26 +532,48 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.Button btnSil;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.Button btnListele;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label lblAdi;
+        private System.Windows.Forms.Label lblSoyadi;
+        private System.Windows.Forms.Label lblPersonelKodu;
+        private System.Windows.Forms.Label lblSifresi;
+        private System.Windows.Forms.Label lblBolgesi;
+        private System.Windows.Forms.Label lblTC;
+        private System.Windows.Forms.ComboBox cmbBolgesi;
+        private System.Windows.Forms.TextBox txtTC;
+        private System.Windows.Forms.TextBox txtAdi;
+        private System.Windows.Forms.TextBox txtSoyadi;
+        private System.Windows.Forms.TextBox txtPersonelKodu;
+        private System.Windows.Forms.TextBox txtSifresi;
+        private System.Windows.Forms.Label lblCinsiyet;
+        private System.Windows.Forms.RadioButton rndTc;
+        private System.Windows.Forms.RadioButton rndAd;
+        private System.Windows.Forms.RadioButton rndSoyad;
+        private System.Windows.Forms.RadioButton rndPersonelKodu;
+        private System.Windows.Forms.RadioButton rndSifresi;
+        private System.Windows.Forms.RadioButton rndBolgesi;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rndCinsiyet;
+        private System.Windows.Forms.CheckBox checkErkek;
+        private System.Windows.Forms.CheckBox checkKadin;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem eKLEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sİLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gÜNCELLEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lİSTELEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gERİToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hAKKIMIZDAToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem gERİToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem çIKIŞToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aRKAPLANToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kIRMIZIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sARIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mAVİToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mORToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bEYAZToolStripMenuItem;
     }
 }

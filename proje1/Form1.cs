@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace proje1
 {
-    public partial class Form1 : Form
+    public partial class frmGiris : Form
     {
-        public Form1()
+        public frmGiris()
         {
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace proje1
             }
             if (KullaniciKontrol(cmbFirma.SelectedValue.ToString(), txtKullaniciAdi.Text, txtSifre.Text))
             {
-                Form2 frm2 = new Form2();
+                frmMenu frm2 = new frmMenu();
                 this.Hide();
                 frm2.Show();
             } 
@@ -71,5 +71,7 @@ namespace proje1
         {
             Application.Exit();
         }
+
+        
     }
 }

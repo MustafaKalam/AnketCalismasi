@@ -1,6 +1,6 @@
 ﻿namespace proje1
 {
-    partial class Form1
+    partial class frmGiris
     {
         /// <summary>
         /// Required designer variable.
@@ -74,6 +74,7 @@
             this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.Location = new System.Drawing.Point(131, 85);
             this.txtSifre.Name = "txtSifre";
+            this.txtSifre.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(130, 23);
             this.txtSifre.TabIndex = 3;
             // 
@@ -124,8 +125,9 @@
             // firmaBilgileriBindingSource
             // 
             this.firmaBilgileriBindingSource.DataSource = typeof(DataAccessLayer.Concreate.FirmaBilgileri);
+//            this.firmaBilgileriBindingSource.CurrentChanged += new System.EventHandler(this.firmaBilgileriBindingSource_CurrentChanged);
             // 
-            // Form1
+            // frmGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,7 +142,7 @@
             this.Controls.Add(this.lblKullaniciAdi);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Form1";
+            this.Name = "frmGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Ekranı";
             this.Load += new System.EventHandler(this.Form1_Load);

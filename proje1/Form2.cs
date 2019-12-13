@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proje1
 {
-    public partial class Form2 : Form
+    public partial class frmMenu : Form
     {
-        public Form2()
+        public frmMenu()
         {
             InitializeComponent();
         }
@@ -24,35 +24,35 @@ namespace proje1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form3 a = new Form3();
+            frmYonetici a = new frmYonetici();
             a.Show();
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 a = new Form4();
+            frmPersonel a = new frmPersonel();
             a.Show();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form5 a = new Form5();
+            frmSube a = new frmSube();
             a.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form6 a = new Form6();
+            frmMusteriAnket a = new frmMusteriAnket();
             a.Show();
             this.Hide();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Form7 a = new Form7();
+            frmYoneticiAnket a = new frmYoneticiAnket();
             a.Show();
             this.Hide();
         }

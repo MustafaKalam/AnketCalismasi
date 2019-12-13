@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace proje1
 {
-    public partial class Form7 : Form
+    public partial class frmYoneticiAnket : Form
     {
-        public Form7()
+        public frmYoneticiAnket()
         {
             InitializeComponent();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form2 a = new Form2();
+            frmMenu a = new frmMenu();
             a.Show();
             this.Hide();
         }
